@@ -44,27 +44,27 @@ public class MyBatisPlusGenerate {
     /**
      * JDBC 连接地址
      */
-    private static final String JDBC_URL = "jdbc:mysql://192.168.223.128:3306/test?serverTimezone=Asia/Shanghai&useLegacyDatetimeCode=false&nullNamePatternMatchesAll=true&zeroDateTimeBehavior=CONVERT_TO_NULL&tinyInt1isBit=false&autoReconnect=true&useSSL=false&pinGlobalTxToPhysicalConnection=true";
+    private static final String JDBC_URL = "jdbc:oracle:thin:@172.16.15.6:1521/orcl";
 //    private static final String JDBC_URL = "jdbc:oracle:thin:@10.68.4.46:1521/orcl";
     /**
      * JDBC 驱动程序
      */
-    private static final String JDBC_DRIVER_NAME = "com.mysql.cj.jdbc.Driver";
+    private static final String JDBC_DRIVER_NAME = "oracle.jdbc.OracleDriver";
 //    private static final String JDBC_DRIVER_NAME = "oracle.jdbc.driver.OracleDriver";
     /**
      * 数据库账号
      */
-    private static final String JDBC_USERNAME = "root";
+    private static final String JDBC_USERNAME = "henanhealthstatistics";
 //    private static final String JDBC_USERNAME = "healthRecord";
     /**
      * 数据库密码
      */
-    private static final String JDBC_PASSWORD = "123456-abc";
+    private static final String JDBC_PASSWORD = "henanhealthstatistics";
 //    private static final String JDBC_PASSWORD = "healthRecord";
     /**
      * 包配置 - 父级目录
      */
-    private static final String PACKAGE_PARENT = "com.msunsoft.sptapi.user";
+    private static final String PACKAGE_PARENT = "com.msunsoft.spt.server.hncollection";
 
     /**
      * 包配置 - 模块目录 <br>
@@ -101,7 +101,7 @@ public class MyBatisPlusGenerate {
      * 要生成的表，用 `,` 分割
      */
     //private static final String TABLES = "SPT_API_MAPPING,SPT_MENU,SPT_ROLE,SPT_ROLE_MENU,SPT_USER,SPT_USER_ROLE,APP_INFO,USER_TOKEN";
-    private static final String TABLES = "core_post";
+    private static final String TABLES = "HENAN_131";
     /**
      * 全局配置
      *
