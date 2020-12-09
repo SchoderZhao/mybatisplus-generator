@@ -195,10 +195,10 @@ public class MyBatisPlusGenerate {
 
         // CommonBase
 //        config.setSuperEntityColumns("id", "create_time", "update_time");
-        config.setSuperEntityClass("com.msunsoft.commons.base.BaseDomain");
-        config.setSuperServiceClass("com.msunsoft.commons.base.IBaseService");
-        config.setSuperServiceImplClass("com.msunsoft.commons.base.BaseServiceImpl");
-        config.setSuperControllerClass("com.msunsoft.commons.base.BaseController");
+        config.setSuperEntityClass("com.msunsoft.spt.common.base.BaseDomain");
+        config.setSuperServiceClass("com.msunsoft.spt.common.base.IBaseService");
+        config.setSuperServiceImplClass("com.msunsoft.spt.common.base.BaseServiceImpl");
+        config.setSuperControllerClass("com.msunsoft.spt.common.base.BaseController");
 
         return config;
     }
