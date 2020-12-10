@@ -6,6 +6,7 @@ package com.msunsoft.generator;
  */
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.InjectionConfig;
@@ -112,6 +113,9 @@ public class MyBatisPlusGenerate {
         config.setOutputDir(USER_DIR + "/src/main/java");
         config.setAuthor(AUTHOR);
         config.setOpen(false);
+
+        //主键策略 uuid
+        config.setIdType(IdType.ASSIGN_UUID);
         return config;
     }
 
@@ -188,6 +192,7 @@ public class MyBatisPlusGenerate {
         config.setTablePrefix(packageConfig().getModuleName() + "_");
         // 字段填充
         List<TableFill> tableFills = new ArrayList<>();
+
         tableFills.add(new TableFill("is_deleted", FieldFill.INSERT));
         tableFills.add(new TableFill("create_time", FieldFill.INSERT));
         tableFills.add(new TableFill("update_time", FieldFill.INSERT_UPDATE));
