@@ -45,7 +45,7 @@ public class MyBatisPlusGenerate {
     /**
      * JDBC 连接地址
      */
-    private static final String JDBC_URL = "jdbc:oracle:thin:@172.16.15.6:1521/orcl";
+    private static final String JDBC_URL = "jdbc:oracle:thin:@10.67.78.84:15121/HDW";
 //    private static final String JDBC_URL = "jdbc:oracle:thin:@10.68.4.46:1521/orcl";
     /**
      * JDBC 驱动程序
@@ -65,7 +65,7 @@ public class MyBatisPlusGenerate {
     /**
      * 包配置 - 父级目录
      */
-    private static final String PACKAGE_PARENT = "com.msunsoft.spt.server.hncollection";
+    private static final String PACKAGE_PARENT = "com.msunsoft.spt.server.hncollectiondict";
 
     /**
      * 包配置 - 模块目录 <br>
@@ -102,7 +102,7 @@ public class MyBatisPlusGenerate {
      * 要生成的表，用 `,` 分割
      */
     //private static final String TABLES = "SPT_API_MAPPING,SPT_MENU,SPT_ROLE,SPT_ROLE_MENU,SPT_USER,SPT_USER_ROLE,APP_INFO,USER_TOKEN";
-    private static final String TABLES = "HENAN_131";
+    private static final String TABLES = "MRHP_CANT,MRHP_HEALTH_ORG_CATEGORY,MRHP_MAIN_DISEASE,RHSA_STD_DICT";
     /**
      * 全局配置
      *
@@ -115,7 +115,7 @@ public class MyBatisPlusGenerate {
         config.setOpen(false);
 
         //主键策略 uuid
-        config.setIdType(IdType.ASSIGN_UUID);
+        config.setIdType(IdType.UUID);
         return config;
     }
 
