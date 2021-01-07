@@ -115,7 +115,7 @@ public class MyBatisPlusGenerate {
         config.setOpen(false);
 
         //主键策略 uuid
-        config.setIdType(IdType.UUID);
+        config.setIdType(IdType.ASSIGN_UUID);
         return config;
     }
 
